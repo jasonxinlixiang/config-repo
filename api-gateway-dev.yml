@@ -14,7 +14,4 @@ zuul:
     - /**/product/listForOrder 
 management:
   security:
-    enabled: false    
-ribbon:
-  ReadTimeout: 5000
-  SocketTimeout: 5000
+    enabled: false
