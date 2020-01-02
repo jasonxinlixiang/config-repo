@@ -11,3 +11,15 @@ spring:
     password: guest
 env:
   dev
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
